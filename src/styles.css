@@ -315,6 +315,8 @@ h3 {
 
 .hero-photo-wrap {
   position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 220px 220px 10px 10px;
@@ -330,9 +332,9 @@ h3 {
 
 .hero-photo-wrap img {
   width: 100%;
-  aspect-ratio: 2 / 3;
+  height: 100%;
   object-fit: cover;
-  object-position: center 18%;
+  object-position: center 28%;
 }
 
 .photo-caption {
@@ -871,6 +873,7 @@ h3 {
   position: relative;
   width: 100%;
   max-width: 390px;
+  aspect-ratio: 4 / 5;
   justify-self: center;
 }
 
@@ -886,9 +889,9 @@ h3 {
   position: relative;
   z-index: 1;
   width: 100%;
-  aspect-ratio: 0.73;
+  height: 100%;
   object-fit: cover;
-  object-position: center 42%;
+  object-position: center 36%;
 }
 
 .authority-photo > span {
