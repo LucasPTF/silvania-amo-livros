@@ -363,7 +363,11 @@ function SalesPage({ content }: { content: HeroContent }) {
 
         <section className="section legal-section">
           <div className="container legal-card">
-            <span className="legal-number">7</span>
+            <div className="legal-seal" aria-label="Direito de arrependimento em 7 dias">
+              <span className="legal-seal-kicker">Direito</span>
+              <strong>7</strong>
+              <span className="legal-seal-days">dias</span>
+            </div>
             <div>
               <p className="section-label">Direito de arrependimento</p>
               <h2>Você pode solicitar o cancelamento dentro do prazo legal.</h2>
@@ -462,4 +466,3 @@ const page = normalizedPath === "/obrigado"
 createRoot(document.getElementById("root")!).render(
   <React.StrictMode>{page}</React.StrictMode>,
 );
-
